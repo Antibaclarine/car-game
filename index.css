@@ -1,6 +1,6 @@
-/* body{
-    /* background-color: skyblue; */
-/* } */
+ body{
+    background-color: black; 
+ } 
 #moving-image {
     position: absolute;
     transform: scale(0.65);
@@ -140,5 +140,39 @@
   justify-content: space-between;
   flex-wrap: wrap;
   position: relative;
-  top: 300px;
+  top: 700px;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: white;
+}
+nav a{
+text-decoration: none;
+color: white;
+}
+.sec{
+  z-index: 1;
+}
+.play{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+  top: 700px;
+  /* background-color: blue; */
+}
+.img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  transition-property: transform;
+transition-duration: 0.5s;
+transition-timing-function: ease-in-out;
+}
+.img:hover{
+  transform: scale(1.1);
 }
